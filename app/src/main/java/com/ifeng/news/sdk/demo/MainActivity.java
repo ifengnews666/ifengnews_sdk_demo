@@ -1,43 +1,42 @@
 package com.ifeng.news.sdk.demo;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+
+import com.ifeng.core.widget.parallax_viewpager.IfengSlideView;
+
+/**
+ * Created by litao3 on 2018/3/6.
+ */
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView mTextMessage;
-
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
-                case R.id.navigation_dashboard:
-                    mTextMessage.setText(R.string.title_dashboard);
-                    return true;
-                case R.id.navigation_notifications:
-                    mTextMessage.setText(R.string.title_notifications);
-                    return true;
-            }
-            return false;
-        }
-    };
-
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mTextMessage = (TextView) findViewById(R.id.message);
     }
 
+    public void showIfengNewsStyle(View view) {
+        Intent intent = new Intent();
+        intent.setClass(getApplicationContext(), IfengStyleNewsActivity.class);
+        startActivity(intent);
+    }
+
+    public void showBlueStyle(View view) {
+        Intent intent = new Intent();
+        intent.setClass(getApplicationContext(), BlueStyleActivity.class);
+        startActivity(intent);
+    }
+
+    public void showBlueStyleWithLogo(View view) {
+        Intent intent = new Intent();
+        intent.setClass(getApplicationContext(), BlueStyleWithLogoActivity.class);
+        startActivity(intent);
+
+    }
 }

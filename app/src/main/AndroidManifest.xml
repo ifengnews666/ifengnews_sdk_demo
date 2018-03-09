@@ -20,20 +20,13 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".IfengStyleNewsActivity"></activity>
+        <activity android:name=".BlueStyleActivity"></activity>
+        <activity android:name=".BlueStyleWithLogoActivity"></activity>
 
-        <activity android:name="com.newqm.sdkoffer.QuMiActivity"
-            android:configChanges="keyboardHidden|orientation"/>
-        <service android:name="com.newqm.sdkoffer.BanSy"/>
-        <receiver android:name="com.newqm.sdkoffer.BannerReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED"></action>
-                <data android:scheme="package"></data>
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>

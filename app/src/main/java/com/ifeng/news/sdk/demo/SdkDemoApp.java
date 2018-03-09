@@ -2,6 +2,7 @@ package com.ifeng.news.sdk.demo;
 
 import android.app.Application;
 
+import com.ifeng.core.DisplayConfiguration;
 import com.ifeng.core.IfengEngine;
 
 /**
@@ -13,8 +14,12 @@ public class SdkDemoApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        new IfengEngine.Builder().
+        IfengEngine engine = new IfengEngine.Builder().
                 setContext(this).setKey("5286").setProID("ifengnewslite")
                 .setDataType("news_ex").builder();
+        DisplayConfiguration configuration = engine.getConfiguration();
+        configuration.setShowHead(false);
+        configuration.setMenuBackgroundColorResID(R.color.colorPrimary);
+        configuration.setTextUncheckedColorResID(android.R.color.white);
     }
 }

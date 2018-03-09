@@ -46,25 +46,27 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:support-vector-drawable:26.1.0'
-    implementation 'com.ifeng.newssdk:core:0.16'
-//    //disklrucache
-//    compile 'com.jakewharton:disklrucache:2.0.2'
-//    //okhttp
+    compile files('libs/core-debug.aar')
+    compile files('libs/commonbiz-debug.aar')
+
+    //disklrucache
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    //okhttp
     compile 'com.squareup.okhttp3:okhttp:3.7.0'
-//    //retrofit
-//    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-//    //adapter-rxjava
-//    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
-//    //converter-gson
-//    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
-//    //gson
-//    compile 'com.google.code.gson:gson:2.8.2'
-//    //rxandroid
-//    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
-//    //rxjava
-//    compile 'io.reactivex.rxjava2:rxjava:2.1.7'
-//    //picasso
-//    compile 'com.squareup.picasso:picasso:2.5.2'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    //adapter-rxjava
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //converter-gson
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //gson
+    compile 'com.google.code.gson:gson:2.8.2'
+    //rxandroid
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //rxjava
+    compile 'io.reactivex.rxjava2:rxjava:2.1.7'
+    //picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
