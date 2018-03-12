@@ -18,9 +18,10 @@ public class BlueStyleWithLogoActivity extends Activity{
                 setContext(this.getApplication()).setKey("5286").setProID("ifengnewslite")
                 .setDataType("news_ex").builder();
         DisplayConfiguration configuration = engine.getConfiguration();
-        configuration.setShowHead(false);
+        configuration.setShowHead(true);
         configuration.setMenuBackgroundColorResID(R.color.colorPrimary);
         configuration.setTextUncheckedColorResID(android.R.color.white);
+        configuration.setHeadTextColorResId(android.R.color.white);
 
 
         //requestWindowFeature(Window.FEATURE_NO_TITLE);
