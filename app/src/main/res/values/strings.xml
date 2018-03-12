@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">news_sdk</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">凤凰新闻</string>
+    <string name="title_notifications">通知</string>
+    <string name="title_activity_bottom_tab">BottomTabActivity</string>
 </resources>

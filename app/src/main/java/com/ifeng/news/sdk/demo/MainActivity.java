@@ -37,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent();
         intent.setClass(getApplicationContext(), BlueStyleWithLogoActivity.class);
         startActivity(intent);
+    }
 
+
+    public void showBottomTabActivity(View view) {
+        Intent intent = new Intent();
+        intent.setClass(getApplicationContext(), BottomTabActivity.class);
+        startActivity(intent);
     }
 }

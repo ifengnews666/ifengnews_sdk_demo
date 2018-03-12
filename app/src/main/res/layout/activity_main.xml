@@ -36,6 +36,15 @@
             android:onClick="showBlueStyle"
             android:text="蓝色样式无Logo" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="showBottomTabActivity"
+            android:text="下导航界面嵌入信息流" />
+
 
     </LinearLayout>
 

@@ -14,7 +14,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        vectorDrawables.useSupportLibrary= true
+        vectorDrawables.useSupportLibrary = true
 
 
         ndk {
@@ -37,6 +37,7 @@ android {
         }
     }
 
+
 }
 
 dependencies {
@@ -46,8 +47,7 @@ dependencies {
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:support-vector-drawable:26.1.0'
-    compile files('libs/core-debug.aar')
-    compile files('libs/commonbiz-debug.aar')
+    compile 'com.ifeng.newssdk:core:0.17'
 
     //disklrucache
     compile 'com.jakewharton:disklrucache:2.0.2'
