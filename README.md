@@ -5,7 +5,7 @@
 
 ## 作为单独界面接入效果示例
 | 默认样式 | 蓝色样式带LOGO | 蓝色样式不带LOGO |
- | --------   | -----:   | :----: |
+ | :-----:   | :-----:   | :----: |
 ![效果图](https://github.com/ifengnews666/ifengnews_sdk_demo/blob/master/doc/demo.gif?raw=true) | ![效果图](https://github.com/ifengnews666/ifengnews_sdk_demo/blob/master/doc/demo2.gif?raw=true) | ![效果图](https://github.com/ifengnews666/ifengnews_sdk_demo/blob/master/doc/demo3.gif) |
 
 
